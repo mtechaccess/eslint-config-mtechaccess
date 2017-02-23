@@ -117,8 +117,8 @@ module.exports = {
     // 'no-unused-expressions': 0,
     // 'no-unused-labels': 2, // eslint:recommended
     'no-useless-call': 2,
-    'no-useless-concat': 2,
-    'no-useless-escape': 2,
+    'no-useless-concat': 'error',
+    'no-useless-escape': 'error',
     // 'no-void': 0,
     'no-warning-comments': 1,
     'no-with': 2,
