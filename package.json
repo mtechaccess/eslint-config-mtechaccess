@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-mtechaccess",
   "version": "1.0.1",
-  "description": "",
+  "description": "ESLint shareable config for MtechAccess Ltd.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/mtechaccess/eslint-config-mtechaccess.git"
   },
-  "author": "",
+  "author": "Mtech Access Ltd.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mtechaccess/eslint-config-mtechaccess/issues"
   },
-  "homepage": "https://github.com/mtechaccess/eslint-config-mtechaccess#readme"
+  "homepage": "https://github.com/mtechaccess/eslint-config-mtechaccess#readme",
+  "devDependencies": {
+    "eslint": "^3.16.1"
+  }
 }
