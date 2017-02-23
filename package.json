@@ -11,12 +11,15 @@
     "url": "git+https://github.com/mtechaccess/eslint-config-mtechaccess.git"
   },
   "author": "Mtech Access Ltd.",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mtechaccess/eslint-config-mtechaccess/issues"
   },
   "homepage": "https://github.com/mtechaccess/eslint-config-mtechaccess#readme",
   "devDependencies": {
+    "eslint": "^3.16.1"
+  },
+  "dependencies": {
     "eslint": "^3.16.1"
   }
 }
