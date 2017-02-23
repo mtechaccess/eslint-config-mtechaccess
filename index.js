@@ -17,7 +17,9 @@ module.exports = {
     // http://eslint.org/docs/rules/#possible-errors
     // ---------------------------------------------
     'no-cond-assign': 0, // eslint:recommended
-    'no-console': 1, // eslint:recommended
+    'no-console': [1, {
+      allow: ["warn", "error"]
+    }], // eslint:recommended
     // 'no-constant-condition': 2, // eslint:recommended
     // 'no-control-regex': 2, // eslint:recommended
     // 'no-debugger': 2, // eslint:recommended
@@ -65,19 +67,18 @@ module.exports = {
     // 'class-methods-use-this': 0,
     'complexity': [2, 20],
     // 'consistent-return': 0
-    //'curly': 'all',
-    // the exception of simple, single-line if statements.
-    // 'default-case': 0,
+    'curly': 2,
+    'default-case': 2,
     // 'dot-location': 0,
-    // 'dot-notation': 0,
-    // 'eqeqeq': 0,
+    'dot-notation': 2,
+    'eqeqeq': ["error", "always"],
     'guard-for-in': 2,
-    // 'no-alert': 0,
+    'no-alert': "error",
     'no-caller': 2,
     // 'no-case-declarations': 2, // eslint:recommended
     // 'no-div-regex': 0,
     // 'no-else-return': 0,
-    // 'no-empty-function': 0,
+    'no-empty-function': 2,
     // 'no-empty-pattern': 2, // eslint:recommended
     // 'no-eq-null': 0,
     // 'no-eval': 0,
@@ -109,22 +110,22 @@ module.exports = {
     // 'no-return-assign': 0,
     // 'no-script-url': 0,
     // 'no-self-assign': 2, // eslint:recommended
-    // 'no-self-compare': 0,
+    'no-self-compare': 2,
     // 'no-sequences': 0,
     'no-throw-literal': 2, // eslint:recommended
     // 'no-unmodified-loop-condition': 0,
     // 'no-unused-expressions': 0,
     // 'no-unused-labels': 2, // eslint:recommended
-    // 'no-useless-call': 0,
-    // 'no-useless-concat': 0,
-    // 'no-useless-escape': 0,
+    'no-useless-call': 2,
+    'no-useless-concat': 2,
+    'no-useless-escape': 2,
     // 'no-void': 0,
-    // 'no-warning-comments': 0,
+    'no-warning-comments': 1,
     'no-with': 2,
     'radix': [2, "as-needed"],
     // 'vars-on-top': 0,
-    // 'wrap-iife': 0,
-    // 'yoda': 0,
+    'wrap-iife': 2,
+    'yoda': 2,
 
     // Strict Mode
     // http://eslint.org/docs/rules/#strict-mode
@@ -139,7 +140,7 @@ module.exports = {
     // 'no-delete-var': 2, // eslint:recommended
     // 'no-label-var': 0,
     // 'no-restricted-globals': 0,
-    // 'no-shadow-restricted-names': 0,
+    'no-shadow-restricted-names': 2,
     // 'no-shadow': 0,
     // 'no-undef-init': 0,
     // 'no-undef': 2, // eslint:recommended
@@ -298,7 +299,7 @@ module.exports = {
     'rest-spread-spacing': 2,
     // 'sort-imports': 0,
     // 'symbol-description': 0,
-    // 'template-curly-spacing': 0,
+    'template-curly-spacing': ["error", "never"],
     'yield-star-spacing': [2, 'after'],
   },
 };
