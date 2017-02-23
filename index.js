@@ -65,7 +65,7 @@ module.exports = {
     // 'class-methods-use-this': 0,
     'complexity': [2, 20],
     // 'consistent-return': 0
-    'curly': 'all',
+    //'curly': 'all',
     // the exception of simple, single-line if statements.
     // 'default-case': 0,
     // 'dot-location': 0,
