@@ -1,3 +1,8 @@
+/**
+ * Adapted from
+ * https://www.npmjs.com/package/eslint-config-google
+ */
+
 'use strict';
 
 module.exports = {
@@ -6,11 +11,7 @@ module.exports = {
     // rules page. All rules are listed to make it easier to keep in sync
     // as new ESLint rules are added.
     // http://eslint.org/docs/rules/
-    // - Rules in the `eslint:recommended` ruleset that aren't specifically
-    //   mentioned by the google styleguide are listed but commented out (so
-    //   they don't override a base ruleset).
-    // - Rules that are recommended but contradict the Google styleguide
-    //   are explicitely set to the Google styleguide value.
+
 
     // Possible Errors
     // http://eslint.org/docs/rules/#possible-errors
@@ -64,7 +65,7 @@ module.exports = {
     // 'class-methods-use-this': 0,
     'complexity': [2, 20],
     // 'consistent-return': 0
-    // 'curly': 0, // TODO(philipwalton): add an option to enforce braces with
+    'curly': 'all',
     // the exception of simple, single-line if statements.
     // 'default-case': 0,
     // 'dot-location': 0,
@@ -200,8 +201,7 @@ module.exports = {
     // 'max-params': 0,
     // 'max-statements-per-line': 0,
     // 'max-statements': 0,
-    // 'multiline-ternary': 0, // TODO(philipwalton): add a rule to enforce the
-    // operator appearing at the end of the line.
+    // 'multiline-ternary': 0,
     'new-cap': 2,
     // 'new-parens': 0,
     // 'newline-after-var': 0,
@@ -268,15 +268,12 @@ module.exports = {
     // http://eslint.org/docs/rules/#ecmascript-6
     // ------------------------------------------
     // 'arrow-body-style': 0,
-    'arrow-parens': [2, 'as-needed'], // TODO(philipwalton): technically arrow
-    // parens are optional but recommended.
-    // ESLint doesn't support a *consistent*
-    // setting so "always" is used.
+    'arrow-parens': [2, 'as-needed'],
     // 'arrow-spacing': 0,
     'constructor-super': 2, // eslint:recommended
     'generator-star-spacing': [2, 'after'],
     // 'no-class-assign': 0,
-    // 'no-confusing-arrow': 0,
+    'no-confusing-arrow': 'error',
     // 'no-const-assign': 0, // eslint:recommended
     // 'no-dupe-class-members': 0, // eslint:recommended
     // 'no-duplicate-imports': 0,
@@ -288,13 +285,15 @@ module.exports = {
     // 'no-useless-rename': 0,
     'no-var': 2,
     // 'object-shorthand': 0,
-    // 'prefer-arrow-callback': 0,
+    'prefer-arrow-callback': ["error", {
+      "allowNamedFunctions": true
+    }],
     'prefer-const': 'error',
     // 'prefer-numeric-literals': 0,
     // 'prefer-reflect': 0,
     'prefer-rest-params': 2,
-    'prefer-spread': 2,
-    // 'prefer-template': 0,
+    'prefer-spread': 'error',
+    'prefer-template': 2,
     // 'require-yield': 2, // eslint:recommended
     'rest-spread-spacing': 2,
     // 'sort-imports': 0,
