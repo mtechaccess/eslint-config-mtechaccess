@@ -12,13 +12,12 @@ module.exports = {
     // as new ESLint rules are added.
     // http://eslint.org/docs/rules/
 
-
     // Possible Errors
     // http://eslint.org/docs/rules/#possible-errors
     // ---------------------------------------------
     'no-cond-assign': 0, // eslint:recommended
     'no-console': [1, {
-      allow: ["warn", "error"]
+      allow: ['warn', 'error']
     }], // eslint:recommended
     // 'no-constant-condition': 2, // eslint:recommended
     // 'no-control-regex': 2, // eslint:recommended
@@ -52,10 +51,9 @@ module.exports = {
       requireReturn: false,
       prefer: {
         returns: 'return'
-      },
+      }
     }],
     // 'valid-typeof': 2 // eslint:recommended
-
 
     // Best Practices
     // http://eslint.org/docs/rules/#best-practices
@@ -66,18 +64,18 @@ module.exports = {
     // 'block-scoped-var': 0,
     // 'class-methods-use-this': 0,
     'complexity': [2, 20],
-    'consistent-return': 2
+    'consistent-return': 2,
     'curly': 2,
     'default-case': 2,
     // 'dot-location': 0,
     'dot-notation': 2,
-    'eqeqeq': ["error", "always"],
+    'eqeqeq': ['error', 'always'],
     'guard-for-in': 2,
-    'no-alert': "error",
+    'no-alert': 'error',
     'no-caller': 2,
     // 'no-case-declarations': 2, // eslint:recommended
     // 'no-div-regex': 0,
-    'no-else-return': "error",
+    'no-else-return': 'error',
     'no-empty-function': 2,
     // 'no-empty-pattern': 2, // eslint:recommended
     // 'no-eq-null': 0,
@@ -122,7 +120,7 @@ module.exports = {
     // 'no-void': 0,
     'no-warning-comments': 1,
     'no-with': 2,
-    'radix': [2, "as-needed"],
+    'radix': [2, 'as-needed'],
     // 'vars-on-top': 0,
     'wrap-iife': 2,
     'yoda': 2,
@@ -187,7 +185,7 @@ module.exports = {
     // 'id-blacklist': 0,
     // 'id-length': 0,
     // 'id-match': 0,
-"indent": ["error", 2],
+    'indent': ['error', 2],
     // 'jsx-quotes': 0,
     'key-spacing': 2,
     'keyword-spacing': 0,
@@ -236,7 +234,7 @@ module.exports = {
     'one-var': [2, {
       var: 'never',
       let: 'never',
-      const: 'never',
+      const: 'never'
     }],
     // 'operator-assignment': 0,
     // 'operator-linebreak': 0,
@@ -249,18 +247,18 @@ module.exports = {
       require: {
         FunctionDeclaration: true,
         MethodDefinition: true,
-        ClassDeclaration: true,
-      },
+        ClassDeclaration: true
+      }
     }],
     'semi-spacing': 2,
-    'semi': ["error", "always"],
+    'semi': ['error', 'always'],
     // 'sort-keys': 0,
     // 'sort-vars': 0,
     'space-before-blocks': 2,
     'space-before-function-paren': [2, 'never'],
     // 'space-in-parens': 0,
     // 'space-infix-ops': 0,
-    'space-unary-ops': "error",
+    'space-unary-ops': 'error',
     'spaced-comment': 0,
     // 'unicode-bom': 0,
     // 'wrap-regex': 0,
@@ -286,8 +284,8 @@ module.exports = {
     // 'no-useless-rename': 0,
     'no-var': 2,
     // 'object-shorthand': 0,
-    'prefer-arrow-callback': ["error", {
-      "allowNamedFunctions": true
+    'prefer-arrow-callback': ['error', {
+      allowNamedFunctions: true
     }],
     'prefer-const': 'error',
     // 'prefer-numeric-literals': 0,
@@ -299,7 +297,7 @@ module.exports = {
     'rest-spread-spacing': 2,
     // 'sort-imports': 0,
     // 'symbol-description': 0,
-    'template-curly-spacing': ["error", "never"],
-    'yield-star-spacing': [2, 'after'],
-  },
+    'template-curly-spacing': ['error', 'never'],
+    'yield-star-spacing': [2, 'after']
+  }
 };
