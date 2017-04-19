@@ -66,7 +66,7 @@ module.exports = {
     // 'block-scoped-var': 0,
     // 'class-methods-use-this': 0,
     'complexity': [2, 20],
-    // 'consistent-return': 0
+    'consistent-return': 2
     'curly': 2,
     'default-case': 2,
     // 'dot-location': 0,
@@ -77,7 +77,7 @@ module.exports = {
     'no-caller': 2,
     // 'no-case-declarations': 2, // eslint:recommended
     // 'no-div-regex': 0,
-    // 'no-else-return': 0,
+    'no-else-return': "error",
     'no-empty-function': 2,
     // 'no-empty-pattern': 2, // eslint:recommended
     // 'no-eq-null': 0,
@@ -187,7 +187,7 @@ module.exports = {
     // 'id-blacklist': 0,
     // 'id-length': 0,
     // 'id-match': 0,
-    // 'indent': 0,
+"indent": ["error", 2],
     // 'jsx-quotes': 0,
     'key-spacing': 2,
     'keyword-spacing': 0,
@@ -253,14 +253,14 @@ module.exports = {
       },
     }],
     'semi-spacing': 2,
-    'semi': 2,
+    'semi': ["error", "always"],
     // 'sort-keys': 0,
     // 'sort-vars': 0,
     'space-before-blocks': 2,
     'space-before-function-paren': [2, 'never'],
     // 'space-in-parens': 0,
     // 'space-infix-ops': 0,
-    // 'space-unary-ops': 0,
+    'space-unary-ops': "error",
     'spaced-comment': 0,
     // 'unicode-bom': 0,
     // 'wrap-regex': 0,
