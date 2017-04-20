@@ -188,7 +188,7 @@ module.exports = {
     'indent': ['error', 2, {SwitchCase: 1, ObjectExpression: 1, ArrayExpression: 1}],
     // 'jsx-quotes': 0,
     'key-spacing': ['error', {align: 'value'}],
-    'keyword-spacing': ['error', 2, {before: true, after: true}],
+    'keyword-spacing': ['error', {before: true, after: true}],
     // 'line-comment-position': 0,
     'linebreak-style': 2,
     // 'lines-around-comment': 0,
