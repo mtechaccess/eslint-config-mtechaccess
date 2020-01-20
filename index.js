@@ -256,7 +256,7 @@ module.exports = {
     // 'sort-vars': 0,
     'space-before-blocks': 2,
     'space-before-function-paren': [2, 'never'],
-    // 'space-in-parens': 0,
+    'space-in-parens': ["error", "never"],
     'space-infix-ops': ["error", { "int32Hint": false }],
     'space-unary-ops': 'error',
     'spaced-comment': 0,
