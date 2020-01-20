@@ -257,7 +257,7 @@ module.exports = {
     'space-before-blocks': 2,
     'space-before-function-paren': [2, 'never'],
     // 'space-in-parens': 0,
-    // 'space-infix-ops': 0,
+    'space-infix-ops': ["error", { "int32Hint": false }],
     'space-unary-ops': 'error',
     'spaced-comment': 0,
     // 'unicode-bom': 0,
