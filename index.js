@@ -45,14 +45,14 @@ module.exports = {
     // 'no-unsafe-finally': 2, // eslint:recommended
     // 'no-unsafe-negation': 0,
     // 'use-isnan': 2 // eslint:recommended
-    'valid-jsdoc': [2, {
-      requireParamDescription: false,
-      requireReturnDescription: false,
-      requireReturn: false,
-      prefer: {
-        returns: 'return'
-      }
-    }],
+    // 'valid-jsdoc': [2, {
+    //   requireParamDescription: false,
+    //   requireReturnDescription: false,
+    //   requireReturn: false,
+    //   prefer: {
+    //     returns: 'returns'
+    //   }
+    // }],
     // 'valid-typeof': 2 // eslint:recommended
 
     // Best Practices
