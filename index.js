@@ -269,7 +269,7 @@ module.exports = {
     // ------------------------------------------
     // 'arrow-body-style': 0,
     'arrow-parens': [2, 'as-needed'],
-    // 'arrow-spacing': 0,
+    'arrow-spacing': ["error",{ "before": true, "after": true }],
     'constructor-super': 2, // eslint:recommended
     'generator-star-spacing': [2, 'after'],
     // 'no-class-assign': 0,
